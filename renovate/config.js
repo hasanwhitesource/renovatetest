@@ -63,26 +63,9 @@ module.exports = {
     {
       matchUpdateTypes: ['minor', 'patch'],
       matchCurrentVersion: '!/^0/',
-      automerge: true,
+      automerge: false,
       automergeType: 'branch',
       labels: ['automerge'],
-    },
-    {
-      matchManagers: ['dockerfile'],
-      additionalBranchPrefix: 'docker-',
-      groupName: 'docker',
-      labels: ['docker'],
-    },
-    {
-      matchDatasources: ['docker'],
-      additionalBranchPrefix: 'docker-',
-      groupName: 'docker',
-      labels: ['docker'],
-    },
-    {
-      matchDatasources: ['git-refs', 'git-tags', 'github-releases', 'github-tags'],
-      additionalBranchPrefix: 'git-',
-      groupName: 'git',
     },
     {
       matchManagers: ['gradle'],
@@ -94,18 +77,6 @@ module.exports = {
       matchDatasources: ['gradle-version'],
       additionalBranchPrefix: 'gradle-',
       labels: ['java'],
-    },
-    {
-      matchDatasources: ['npm'],
-      additionalBranchPrefix: 'npm-',
-      groupName: 'npm',
-      labels: ['javascript'],
-    },
-    {
-      matchManagers: ['terraform'],
-      additionalBranchPrefix: 'terraform-',
-      groupName: 'terraform',
-      labels: ['terraform'],
     },
   ],
 };
