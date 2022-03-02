@@ -3,12 +3,12 @@
  * see https://raw.githubusercontent.com/ben-manes/caffeine/master/gradle/dependencies.gradle
  */
 ext {
-  versions = [
-    spotbugs_annotations_version     : '4.5.3',
-  ]
+    versions = [
+            spotbugs_annotations_version: '4.5.2',
+    ]
 
 
-  libraries = [
-    spotbugs_annotations     : "com.github.spotbugs:spotbugs-annotations:${versions.spotbugs_annotations_version}",
-  ]
+    libraries = [
+            spotbugs_annotations: "com.github.spotbugs:spotbugs-annotations:${versions.spotbugs_annotations_version}",
+    ]
 }
