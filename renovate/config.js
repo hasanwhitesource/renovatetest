@@ -1,6 +1,6 @@
 module.exports = {
   "extends": [
-    ":assignAndReview(pujanshah3333)",
+    ":assignAndReview(KayBestmann1123)",
     ":autodetectPinVersions",
     ":automergeBranch",
     ":automergeMinor",
@@ -21,6 +21,7 @@ module.exports = {
   ],
   commitMessagePrefix: '[renovate]',
   deepExtract: true,
+  reuseExistingBranch: true,
   dependencyDashboardAutoclose: true,
   docker: { pinDigests: true },
   exposeAllEnv: true,
@@ -37,6 +38,14 @@ module.exports = {
       token: process.env.GITHUB_TOKEN,
     },
   ],
+  lockFileMaintenance: {
+    automerge: true,
+    enabled: true,
+    labels: ['automerge'],
+    reuseExistingBranch: true,
+    schedule: null,
+    updateLockFiles: true,
+  },
   packageRules: [
     {
       matchUpdateTypes: ['major'],
