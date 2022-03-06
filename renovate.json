@@ -22,7 +22,7 @@
       "matchCurrentVersion": "!/^0/",
       "automerge": false,
       "automergeType": "branch",
-      "labels": ['automerge']
+      "labels": ["automerge"]
     },
     {
       "matchManagers": ["gradle"],
