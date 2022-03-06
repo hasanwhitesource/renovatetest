@@ -1,22 +1,5 @@
 {
   "extends": [
     "config:base"
-  ],
-    "packageRules": [
-    {
-      "matchPackageNames": ["com.github.spotbugs:com.github.spotbugs.gradle.plugin"],
-      "allowedVersions": "> 5.0.1"
-    },
-       {
-      "matchManagers": ["gradle"],
-      "additionalBranchPrefix": "java-",
-      "groupName": "java",
-      "labels": ["java"]
-    },
-    {
-      "matchDatasources": ["gradle-version"],
-      "additionalBranchPrefix": "gradle-",
-      "labels": ["java"]
-    }
-   ]
+  ]
 }
