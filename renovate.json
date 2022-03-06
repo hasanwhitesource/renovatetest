@@ -4,11 +4,6 @@
   ],
     "packageRules": [
     {
-      "matchUpdateTypes": ["major"],
-      "labels": ["major-update"],
-      "automerge": false
-    },
-    {
       "matchPackageNames": ["com.github.spotbugs:com.github.spotbugs.gradle.plugin"],
       "allowedVersions": "> 5.0.1"
     }
