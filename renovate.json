@@ -8,15 +8,15 @@
       "allowedVersions": "> 5.0.1"
     },
        {
-      "matchManagers": ['gradle'],
-      "additionalBranchPrefix": 'java-',
-      "groupName": 'java',
-      "labels": ['java']
+      "matchManagers": ["gradle"],
+      "additionalBranchPrefix": "java-",
+      "groupName": "java",
+      "labels": ["java"]
     },
     {
-      "matchDatasources": ['gradle-version'],
-      "additionalBranchPrefix": 'gradle-',
-      "labels": ['java']
+      "matchDatasources": ["gradle-version"],
+      "additionalBranchPrefix": "gradle-",
+      "labels": ["java"]
     }
    ]
 }
