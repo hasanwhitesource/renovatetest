@@ -38,19 +38,6 @@
       "matchPackageNames": ["com.github.spotbugs:com.github.spotbugs.gradle.plugin"],
       "allowedVersions": ">5.0.1"
     },
-    {
-      "matchUpdateTypes": ["minor", "patch"],
-      "matchCurrentVersion": "!/^0/",
-      "automerge": false,
-      "automergeType": "branch",
-      "labels": ["automerge"]
-    },
-     {
-      "matchManagers": ["gradle"],
-      "additionalBranchPrefix": "java-",
-      "groupName": "java",
-      "labels": ["java"]
-    },
      {
       "matchDatasources": ["gradle-version"],
       "additionalBranchPrefix": "gradle-",
