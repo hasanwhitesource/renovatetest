@@ -1,17 +1,24 @@
 {
   "extends": [
     ":autodetectPinVersions",
+    ":autodetectPinVersions",
+    ":automergeBranch",
+    ":automergeMinor",
+    ":automergeRequireAllStatusChecks",
     ":combinePatchMinorReleases",
     ":dependencyDashboard",
     ":ignoreModulesAndTests",
     ":ignoreUnstable",
+    ":label(renovate)",
     ":separateMultipleMajorReleases",
     ":updateNotScheduled",
     "workarounds:all",
     "group:monorepos",
     "group:recommended"
   ],
+  "commitMessagePrefix": "[renovate]",
   "dependencyDashboardAutoclose": true,
+  "labels": ["renovate"],
     "hostRules": [
     {
       "hostType": "maven",
@@ -30,6 +37,13 @@
     {
       "matchPackageNames": ["com.github.spotbugs:com.github.spotbugs.gradle.plugin"],
       "allowedVersions": ">5.0.1"
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "matchCurrentVersion": "!/^0/",
+      "automerge": false,
+      "automergeType": "branch",
+      "labels": ["automerge"]
     },
      {
       "matchManagers": ["gradle"],
