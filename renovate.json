@@ -1,22 +1,6 @@
 {
   "extends": [
-    ":autodetectPinVersions",
-    ":automergeBranch",
-    ":automergeMinor",
-    ":automergeRequireAllStatusChecks",
-    ":combinePatchMinorReleases",
-    ":dependencyDashboard",
-    ":enableVulnerabilityAlerts",
-    ":ignoreModulesAndTests",
-    ":ignoreUnstable",
-    ":label(renovate)",
-    ":prNotPending",
-    ":renovatePrefix",
-    ":separateMultipleMajorReleases",
-    ":updateNotScheduled",
-    "group:monorepos",
-    "group:recommended",
-    "workarounds:all"
+    "config:base"
   ],
     "hostRules": [
     {
