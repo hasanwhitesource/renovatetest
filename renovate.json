@@ -1,6 +1,8 @@
 {
   "extends": [
-    "config:base",
+    ":autodetectPinVersions",
+    ":combinePatchMinorReleases",
+    ":dependencyDashboard",
     ":ignoreModulesAndTests",
     ":ignoreUnstable",
     ":separateMultipleMajorReleases",
