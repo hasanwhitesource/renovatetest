@@ -22,7 +22,7 @@
     {
       "hostType": "maven",
       "matchHost": "https://maven.pkg.github.com/"
-    },
+    }
   ],
   "packageRules": [
     {
