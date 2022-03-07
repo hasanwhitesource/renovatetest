@@ -19,12 +19,6 @@
   "commitMessagePrefix": "[renovate]",
   "dependencyDashboardAutoclose": true,
   "labels": ["renovate"],
-    "hostRules": [
-    {
-      "hostType": "maven",
-      "matchHost": "https://maven.pkg.github.com/"
-    }
-  ],
   "packageRules": [
       {
       "matchUpdateTypes": ["major"],
@@ -47,9 +41,9 @@
     },
      {
       "matchManagers": ["gradle"],
-      "matchPackageNames": ["com.github.spotbugs:spotbugs-annotations"],
-      "groupName": "java",
-      "labels": ["java"]
+      "additionalBranchPrefix": "java-",
+      "groupName": 'java',
+      "labels": ['java'],
     },
      {
       "matchDatasources": ["gradle-version"],
