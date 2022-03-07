@@ -47,7 +47,7 @@
     },
      {
       "matchManagers": ["gradle"],
-      "matchPackageNames": ["spotbugs_annotations_version"]
+      "matchPackageNames": ["com.github.spotbugs:spotbugs-annotations"]
       "groupName": "java",
       "labels": ["java"]
     },
