@@ -1,6 +1,9 @@
 {
   "extends": [
-    "config:base"
+    "config:base",
+    "workarounds:all",
+    "group:monorepos",
+    "group:recommended",
   ],
     "hostRules": [
     {
