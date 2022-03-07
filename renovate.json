@@ -16,7 +16,7 @@
     ":updateNotScheduled",
     "group:monorepos",
     "group:recommended",
-    "workarounds:all",
+    "workarounds:all"
   ],
   "packageRules": [
     {
