@@ -22,7 +22,8 @@
     "hostRules": [
     {
       "hostType": "maven",
-      "matchHost": "https://maven.pkg.github.com/"
+      "matchHost": "https://maven.pkg.github.com/",
+      "token": process.env.GITHUB_TOKEN
     }
   ],
   "packageRules": [
