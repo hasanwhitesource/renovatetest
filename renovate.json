@@ -1,5 +1,31 @@
 {
   "extends": [
-    "config:base"
+    ":autodetectPinVersions",
+    ":automergeBranch",
+    ":automergeMinor",
+    ":automergeRequireAllStatusChecks",
+    ":combinePatchMinorReleases",
+    ":dependencyDashboard",
+    ":enableVulnerabilityAlerts",
+    ":ignoreModulesAndTests",
+    ":ignoreUnstable",
+    ":label(renovate)",
+    ":prNotPending",
+    ":renovatePrefix",
+    ":separateMultipleMajorReleases",
+    ":updateNotScheduled",
+    "group:monorepos",
+    "group:recommended",
+    "workarounds:all",
+  ],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["major"],
+      "labels": ["UPDATE-MAJOR"]
+    },
+    {
+      "matchPackageNames": ["com.github.spotbugs:com.github.spotbugs.gradle.plugin"],
+      "allowedVersions": ">5.0.1"
+    }
   ]
 }
