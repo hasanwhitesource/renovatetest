@@ -32,6 +32,11 @@
     {
       "matchPackageNames": ["com.github.spotbugs:com.github.spotbugs.gradle.plugin"],
       "allowedVersions": ">5.0.1"
+    },
+     {
+      "matchDatasources": ["gradle-version"],
+      "additionalBranchPrefix": "gradle-",
+      "labels": ["java"]
     }
   ]
 }
