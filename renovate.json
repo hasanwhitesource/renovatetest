@@ -42,8 +42,8 @@
      {
       "matchManagers": ["gradle"],
       "additionalBranchPrefix": "java-",
-      "groupName": 'java',
-      "labels": ['java'],
+      "groupName": "java",
+      "labels": ["java"],
     },
      {
       "matchDatasources": ["gradle-version"],
