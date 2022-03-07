@@ -17,12 +17,18 @@
     "group:recommended"
   ],
   "commitMessagePrefix": "[renovate]",
+  "deepExtract": true,
+  "reuseExistingBranch": true,
   "dependencyDashboardAutoclose": true,
+  "dependencyDashboardAutoclose": true,
+  "docker": { "pinDigests": true },
   "labels": ["renovate"],
+  "updateLockFiles": true,
   "packageRules": [
       {
       "matchUpdateTypes": ["major"],
-      "labels": ["UPDATE-MAJOR"]
+      "labels": ["major-update"],
+        "automerge": false,
     },
      {
       "extends": ["group:springBoot"],
