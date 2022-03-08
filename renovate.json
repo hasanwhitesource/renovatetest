@@ -17,7 +17,6 @@
     "group:recommended"
   ],
   "commitMessagePrefix": "[renovate]",
-  "deepExtract": true,
   "reuseExistingBranch": true,
   "dependencyDashboardAutoclose": true,
   "labels": ["renovate"],
