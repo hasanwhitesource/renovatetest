@@ -20,10 +20,7 @@
   "deepExtract": true,
   "reuseExistingBranch": true,
   "dependencyDashboardAutoclose": true,
-  "dependencyDashboardAutoclose": true,
-  "docker": { "pinDigests": true },
   "labels": ["renovate"],
-  "updateLockFiles": true,
   "packageRules": [
       {
       "matchUpdateTypes": ["major"],
