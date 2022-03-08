@@ -24,7 +24,7 @@
       {
       "matchUpdateTypes": ["major"],
       "labels": ["major-update"],
-        "automerge": false,
+       "automerge": false
     },
      {
       "extends": ["group:springBoot"],
