@@ -41,11 +41,15 @@
       "labels": ["automerge"]
     },
      {
-      "matchPaths": ["gradle/**"],
       "matchManagers": ["gradle"],
       "additionalBranchPrefix": "java-",
       "groupName": "java",
       "labels": ["java"]
+    },
+    {
+       "matchPaths": ["gradle/*"],
+      "matchDatasources": ["maven"],
+      "matchPackageNames": ["com.github.spotbugs:spotbugs-annotations:${versions.spotbugs_annotations_version}"]
     },
      {
       "matchDatasources": ["gradle-version"],
