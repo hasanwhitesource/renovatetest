@@ -46,6 +46,7 @@
       "labels": ["automerge"]
     },
      {
+      "matchPaths": ["gradle/**"],
       "matchManagers": ["gradle"],
       "additionalBranchPrefix": "java-",
       "groupName": "java",
